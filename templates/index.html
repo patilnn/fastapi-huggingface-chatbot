@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MedChatbot — Chat UI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="chat-wrap">
+    <div class="card">
+      <div class="header">
+        <div class="title">🤖 MedChatbot</div>
+        <div class="sub">Type a message and press Enter or Send — simple demo</div>
+      </div>
+
+      <div id="messages" class="messages"></div>
+
+      <div class="inputbar">
+        <input id="userInput" type="text" placeholder="Type a message..." autocomplete="off" />
+        <button id="sendBtn">Send</button>
+      </div>
+      <div class="hint">You can test the API at <code>/pi</code> or Swagger UI: <code>/docs</code></div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
