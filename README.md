@@ -16,24 +16,6 @@ This project demonstrates how to integrate a **Python backend API** with **AI te
 
 ---
 
-## 🗂️ Project Structure
-
-📦 demo/
-┣ 📂 templates/
-┃ ┗ 📜 index.html
-┣ 📂 static/
-┃ ┣ 📜 style.css
-┃ ┗ 📜 script.js
-┣ 📜 main.py
-┣ 📜 requirements.txt
-┣ 📜 .env.example
-┗ 📜 README.md
-
-yaml
-Copy code
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone this repository
