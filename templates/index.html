@@ -3,27 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MedChatbot — Chat UI</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <title>Chatbot - Smart, Fast, Clear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css?v=2" />
 </head>
 <body>
-  <div class="chat-wrap">
-    <div class="card">
-      <div class="header">
-        <div class="title">🤖 MedChatbot</div>
-        <div class="sub">Type a message and press Enter or Send — simple demo</div>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+
+  <header class="page-header">
+    <h1 class="page-title">Chatbot</h1>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <h1>Ask anything. Get a quick, helpful response.</h1>
+
+      <div class="chips">
+        <button class="chip" data-prompt="Give me 5 healthy breakfast ideas.">Breakfast ideas</button>
+        <button class="chip" data-prompt="Explain black holes like I'm 12.">Explain black holes</button>
+        <button class="chip" data-prompt="Write a short email to reschedule a meeting.">Reschedule email</button>
+        <button class="chip" data-prompt="Suggest a 3-day travel plan for Jaipur.">Travel plan</button>
       </div>
 
-      <div id="messages" class="messages"></div>
+    </section>
 
-      <div class="inputbar">
-        <input id="userInput" type="text" placeholder="Type a message..." autocomplete="off" />
-        <button id="sendBtn">Send</button>
+    <section class="chat">
+      <div class="card">
+        <div class="header">
+          <div>
+            <div class="title">Live Chat</div>
+            <div class="sub">Short, clear, and friendly responses.</div>
+          </div>
+          <div class="status">
+            <span class="dot dot-green"></span>
+            Active
+          </div>
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+        <div class="inputbar">
+          <input id="userInput" type="text" placeholder="Type your message..." autocomplete="off" />
+          <button id="sendBtn">Send</button>
+        </div>
+        <div class="hint">API: <code>/pi</code> - Docs: <code>/docs</code></div>
       </div>
-      <div class="hint">You can test the API at <code>/pi</code> or Swagger UI: <code>/docs</code></div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <script src="/static/script.js"></script>
+  <script src="/static/script.js?v=2"></script>
 </body>
 </html>

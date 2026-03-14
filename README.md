@@ -1,4 +1,4 @@
-# 🤖 MedChatbot — FastAPI + Hugging Face Integration
+# 🤖 Chatbot — FastAPI + Hugging Face Integration
 
 A modern chatbot built using **FastAPI** and **Hugging Face API**, designed to provide intelligent conversational responses directly through a web interface.  
 This project demonstrates how to integrate a **Python backend API** with **AI text generation models**.
