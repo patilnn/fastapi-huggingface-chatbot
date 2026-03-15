@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -12,12 +13,15 @@ from huggingface_hub import InferenceClient
 load_dotenv()
 HF_TOKEN = os.getenv("HF_TOKEN")
 
+# Resolve project root for templates/static (works locally + on Vercel)
+BASE_DIR = Path(__file__).resolve().parent
+
 # Initialize FastAPI App
 app = FastAPI(title="MedChatbot (Hugging Face)")
 
 # Serve static and template directories
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
+templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 # Initialize Hugging Face Inference Client
 # Model + Provider configuration
