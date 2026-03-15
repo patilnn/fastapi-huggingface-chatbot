@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent
 app = FastAPI(title="MedChatbot (Hugging Face)")
 
 # Serve static and template directories
-app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
+app.mount("/static", StaticFiles(directory=str(BASE_DIR / "public" / "static")), name="static")
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 # Initialize Hugging Face Inference Client
