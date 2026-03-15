@@ -58,7 +58,6 @@ You can easily deploy this project on:
       <li>Render</li>
       <li>Railway</li>
       <li>Google Cloud Run</li>
-      <li>Vercel (with FastAPI adapter)</li>
     </ul>
 
 🧩 Technologies Used
